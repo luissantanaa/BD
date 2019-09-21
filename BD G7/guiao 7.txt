@@ -1,0 +1,42 @@
+7.1A
+1FN, não existem nested relations nem atributos multi-valor. Não pode estar na 2FN pois existem dependencias parciais
+
+B
+(Titulo_Livro,Nome_Autor),Editor,Tipo_Livro,NoPaginas,Ano_Publicação
+(Tipo_Livro,NoPaginas),Preço
+(Nome_Autor),Afiliação_Autor
+(Editor),Endereço_Editor
+
+Criação de novas relações de forma a eliminar dependencias parciais
+Esta na forma 3FN pois nao existem dependencias transitivas
+
+
+7.2A
+A,B
+
+7.2B
+DONE
+
+7.3A
+A,B
+
+7.3B
+(A,B),C,D,E (FN2)
+
+(A,B),C,D  (FN3)
+(D),E
+
+7.3C
+(A,B),D  (BCNF)
+(D),E
+(C),A
+
+7.4A
+A,B
+
+7.4B
+
+
+
+
+

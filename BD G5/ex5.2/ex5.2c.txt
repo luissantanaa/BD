@@ -1,0 +1,2 @@
+temp1 = (encomenda ⨝ numero=numEnc item ⨝ codProd=codigo produto)
+γ encomenda.numero; avg(item.unidades)->averageUni (temp1)

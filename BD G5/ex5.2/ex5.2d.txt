@@ -1,0 +1,1 @@
+π fornecedor.nome,produto.nome, produto.unidades (encomenda ⨝ fornecedor=nif fornecedor ⨝  numero=numEnc item ⨝ codProd = codigo  produto) 

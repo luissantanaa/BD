@@ -1,0 +1,67 @@
+NOTA: Atributos que estiverem dentro de () sao chave primaria da relação
+
+7.1A
+1FN, não existem nested relations nem atributos multi-valor. Não pode estar na 2FN pois existem dependencias parciais
+
+B
+R1(Titulo_Livro,Nome_Autor),Editor,Tipo_Livro,NoPaginas,Ano_Publicação
+R2(Tipo_Livro,NoPaginas),Preço
+R3(Nome_Autor),Afiliação_Autor
+R4(Editor),Endereço_Editor
+
+Criação de novas relações de forma a eliminar dependencias parciais
+Esta na forma 3FN pois nao existem dependencias transitivas
+
+
+7.2A
+A,B
+
+7.2B
+
+2FN
+R1(A,B),C
+R2(A),D,E,I,J
+R3(B),F,G,H
+
+3FN
+R1(A,B),C
+R2(A),D,E
+R3(B),F
+R4(D),I,J
+R5(F),G,H
+
+7.3A
+A,B
+
+7.3B
+(A,B),C,D,E (2FN)
+
+(A,B),C,D  (3FN)
+(D),E
+
+7.3C
+(A,B),D  (BCNF)
+(D),E
+(C),A
+
+7.4A
+A,B
+
+7.4B
+R1(A,B),C,D,E (2FN)
+
+7.4C
+R1(A,B),E  (3FN) 
+R2(A),C
+R3(C),D
+
+7.4D
+R1(A,B),E  (BCNF) 
+R2(A),C
+R3(C),D
+
+
+
+
+
+

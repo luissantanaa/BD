@@ -1,0 +1,4 @@
+γPname;sum(Hours)->SumHours (project ⨝ Pnumber=Pno works_on ⨝ Essn=Ssn employee)
+
+
+

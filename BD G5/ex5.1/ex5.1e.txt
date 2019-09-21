@@ -1,0 +1,3 @@
+temp1 = π Fname, Minit, Lname (project ⨝ Pnumber=Pno works_on ⨝ Essn=Ssn employee)
+temp2 = π Fname, Minit, Lname (employee)
+temp2 - temp1

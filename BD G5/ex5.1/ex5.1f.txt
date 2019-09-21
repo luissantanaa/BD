@@ -1,0 +1,3 @@
+temp1 = (department ⨝ Dnumber=Dno employee)
+temp2 = σ(Sex = 'F') (temp1)
+γ Dname; avg(Salary)->Avg_Salary (temp2)

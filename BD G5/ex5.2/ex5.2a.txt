@@ -1,0 +1,4 @@
+temp1 = π fornecedor.nome (encomenda ⨝ fornecedor=nif fornecedor)
+temp2 = π nome fornecedor
+
+temp2 - temp1

@@ -1,0 +1,7 @@
+﻿5.3
+a) π nome, numUtente (σ numPresc=null (prescricao ⟖ paciente))
+b) γ especialidade; count(numPresc)-> Especialidades (medico ⨝ numSNS=numMedico prescricao)
+c) γ farmacia; count(numPresc) -> num (prescricao ⨝ (farmacia=nome) farmacia) 
+d) π nome, farmaco.numRegFarm (σ numPresc = null (σ farmaco.numRegFarm = 906 (presc_farmaco ⟖ nomeFarmaco = nome farmaco)))
+e) π farmacia, numRegFarm, num (γ farmacia, numRegFarm; count(prescricao.numPresc) -> num (σ farmacia!=null (π prescricao.numPresc, farmacia (prescricao)) ⨝ prescricao.numPresc=presc_farmaco.numPresc (presc_farmaco)))
+f) π nome (σ cnt > 1 (π paciente.nome , cnt (γ paciente.nome; count(numMedico) -> cnt (σ numMedico !=null (paciente ⟕ paciente.numUtente=prescricao.numUtente prescricao)))))

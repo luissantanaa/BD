@@ -1,0 +1,27 @@
+
+Prestação de serviços
+Vlan Camaras
+Vlan S.Admin VConf
+Vlan S.Admin PC
+Vlan S.Admin Tel
+Vlan DevProj. PC
+Vlan DevProj. Tel
+Vlan DevProj. TV
+Vlan Admin VConf
+Vlan Admin PC
+Vlan Admin Tel
+
+
+Edificio de Investigação
+Vlan Camaras
+Vlan Inv. PC
+Vlan Inv. Tel
+Vlan S.Admin PC
+Vlan S.Admin Tel
+Vlan Datacenter
+
+Vlan Wir.Admin
+Vlan Wir.Func
+Vlan Wir.Guest
+
+

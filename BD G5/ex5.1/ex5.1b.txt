@@ -1,0 +1,2 @@
+temp = (π Ssn (σ(Fname='Carlos' and Minit = 'D' and Lname = 'Gomes') (employee))) 
+π Fname, Minit, Lname (employee ⨝ Super_ssn = t.Ssn (ρt temp))

@@ -1,0 +1,40 @@
+cliente (pk = "NIF")
+nome,endereço,num_carta,"NIF"
+
+aluguer (fk = "NIF"->cliente/"numero"->balcão/"matricula"->veiculo)
+"numero",duração,data, NIFCL,NUMB,MATVEICULO
+
+balcao (pk = "número")
+nome,"numero",endereço
+
+veiculo (pk = "matricula")
+"matricula",ano,marca
+
+tipo_veiculo (pk = "codigo") (disjoint)(ligeiro,pesado)
+"codigo",designação,arcondicionado
+
+ligeiro
+numlugares,portas,combustivel
+
+pesado
+peso,passageiros
+
+
+ENTIDADE FRACAS X
+
+
+1:1 RELATIONS  X
+
+
+1:N RELATIONS  
+(titular-> S(N)=aluguer,T(1)=cliente)
+(local-> S(N)=aluguer,T(1)=balcao)
+(objecto-> S(N)=aluguer,T(1)=veiculo)
+
+
+N:M RELATIONS X
+
+RELAÇÕES N-ÁRIO X
+
+
+

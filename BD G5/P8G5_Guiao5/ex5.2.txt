@@ -1,0 +1,23 @@
+-- ex5.2a
+-- temp1 = π fornecedor.nome (encomenda ⨝ fornecedor=nif fornecedor)
+-- temp2 = π nome fornecedor
+-- temp2 - temp1
+
+-- ex5.2b
+-- temp1 = π produto.nome,item.unidades (encomenda ⨝ numero=numEnc item ⨝ codProd=codigo produto)
+-- γ produto.nome; avg(item.unidades)->ProdAvg (temp1)
+
+-- ex5.2c
+-- temp1 = (encomenda ⨝ numero=numEnc item ⨝ codProd=codigo produto)
+-- γ encomenda.numero; avg(item.unidades)->averageUni (temp1)
+
+-- ex5.2d
+-- π fornecedor.nome,produto.nome, produto.unidades (encomenda ⨝ fornecedor=nif fornecedor ⨝  numero=numEnc item ⨝ codProd = codigo  produto) 
+
+
+-- ex5.2e
+-- 
+
+
+
+

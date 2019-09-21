@@ -1,0 +1,43 @@
+-- ex5.1a
+-- π Pname, Fname, Minit, Lname, Ssn (project ⨝ Pnumber=Pno works_on ⨝ Essn=Ssn employee)
+
+-- ex5.1b
+-- temp = (π Ssn (σ(Fname='Carlos' and Minit = 'D' and Lname = 'Gomes') (employee))) 
+-- π Fname, Minit, Lname (employee ⨝ Super_ssn = t.Ssn (ρt temp))
+
+
+-- ex5.1c
+-- γPname;sum(Hours)->SumHours (project ⨝ Pnumber=Pno works_on ⨝ Essn=Ssn employee)
+
+
+-- ex5.1d
+-- π Pname, Fname, Minit, Lname, Hours,Dno (project ⨝ Pnumber=Pno and Pname = 'Aveiro Digital' and Hours ≥ 21 works_on   ⨝ Essn=Ssn and Dno = 3 employee)
+
+
+-- ex5.1e
+-- temp1 = π Fname, Minit, Lname (project ⨝ Pnumber=Pno works_on ⨝ Essn=Ssn employee)
+-- temp2 = π Fname, Minit, Lname (employee)
+-- temp2 - temp1
+
+-- ex5.1f
+-- temp1 = (department ⨝ Dnumber=Dno employee)
+-- temp2 = σ(Sex = 'F') (temp1)
+-- γ Dname; avg(Salary)->Avg_Salary (temp2)
+
+-- ex5.1g
+-- σ depend>2 (π Fname, Minit, Lname, depend (γ Ssn, Fname, Minit, Lname; Count(Ssn) -> depend (π Ssn, Fname, Minit, Lname (employee) ⨝ Ssn=Essn π Essn, Dependent_name (dependent))))
+
+-- ex5.1h
+-- temp1 = πFname,Minit,Lname (department ⨝ Mgr_ssn=Ssn employee)
+-- temp2 = π employee.Fname,employee.Minit,employee.Lname (dependent ⨝ Essn=Ssn employee)
+-- temp1 - temp2
+
+-- ex5.1i
+-- temp1 = π Fname,Minit,Lname ((σ(Plocation='Aveiro') (project))⨝employee)
+-- temp2 = π Fname,Minit,Lname ((σ(Dlocation≠'Aveiro') (dept_location)) ⨝ Dnumber = Dno  employee)
+-- temp1 ∩ temp2
+
+
+
+
+

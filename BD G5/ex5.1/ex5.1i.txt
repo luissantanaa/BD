@@ -1,0 +1,8 @@
+temp1 = π Fname,Minit,Lname ((σ(Plocation='Aveiro') (project))⨝employee)
+temp2 = π Fname,Minit,Lname ((σ(Dlocation≠'Aveiro') (dept_location)) ⨝ Dnumber = Dno  employee)
+
+temp1 ∩ temp2
+
+
+
+

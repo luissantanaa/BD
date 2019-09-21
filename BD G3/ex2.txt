@@ -1,0 +1,53 @@
+Airport (fk= "type_name")
+"airport_code",city,state,name
+
+Airplane_type (fk= "airport_code")
+"type_name",max_seats,company,"Type"
+
+Airplane
+"airplane_id",total_no_of_seats
+
+Flight_Leg (EF fk=airport_code->Airport)
+"leg_no", schedule_dep_time, schedule_arr_time,"number",arr_airport,dep_airport
+
+Fare (EF fk=number->Flight)
+"code",amount,restrictions,"flight_number"
+
+Flight
+"number",airline,weekdays
+
+Leg Instance (EF fk=airplane_id->Airplane)
+date,numb_of_avail_seats,airplane_id,airport_code,leg_no,arr_time,dep_time
+
+Seat (EF fk=airplane_id->Airplane)
+"seat_no",CustName,CustPhone,"Date","AirplaneID","LEGNO"
+
+
+
+1:1 RELATIONS X
+
+
+1:N RELATIONS
+(departure_airport (schedule_dep_time)-> S(N)=flight_leg T(1)=airport)
+(arrival_airport (schedule_arr_time)-> S(N)=flight_leg T(1)=airport)
+(type-> S(N)=airplane T(1)=airplane_type)
+(departs (dep_time)-> S(N)=leg_instance T(1)=airport)
+(arrives (arr_time)-> S(N)=leg_instance T(1)=airport)
+(instance_of-> S(N)=leg_instance T(1)=flight_leg)
+(fares-> S(N)=fare T(1)=flight)
+(legs-> S(N)=flight_leg T(1)=flight)
+(reservation (customer_name/cphone)-> S(N)=seat T(1)=leg_instance)
+(assigned-> S(N)=leg_instance T(1)=airplane)
+
+
+N:M RELATIONS
+(can_land-> airport/airplane_type)
+
+
+
+
+
+
+
+
+

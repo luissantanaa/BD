@@ -1,0 +1,3 @@
+temp1 = π produto.nome,item.unidades (encomenda ⨝ numero=numEnc item ⨝ codProd=codigo produto)
+
+γ produto.nome; avg(item.unidades)->ProdAvg (temp1)

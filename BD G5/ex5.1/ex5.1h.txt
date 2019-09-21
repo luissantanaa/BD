@@ -1,0 +1,11 @@
+﻿temp1 = πFname,Minit,Lname (department ⨝ Mgr_ssn=Ssn employee)
+temp2 = π employee.Fname,employee.Minit,employee.Lname (dependent ⨝ Essn=Ssn employee)
+temp1 - temp2
+
+
+
+
+
+
+
+

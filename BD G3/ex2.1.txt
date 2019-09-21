@@ -1,0 +1,21 @@
+Produto (fk = "nr_encomenda")
+"codigo",preço,stock,nome,taxa
+
+Encomenda (fk="NIF")
+produtos,data_realizaçao,"nr_encomenda"
+
+Fornecedor (fk = "ID")
+"NIF",cod_pagamento,endereço,nome,nr_fax
+
+Tipo
+"ID",designaçao
+
+Composta
+"codigo","nr_encomenda",quantidade
+
+1:N relations
+tem -> ((S) encomenda; (T) fornecedor)
+tem -> ((S) fornecedor; (T) tipo)
+
+N:M relations
+composta

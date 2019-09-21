@@ -1,0 +1,3 @@
+σ depend>2 (π Fname, Minit, Lname, depend (γ Ssn, Fname, Minit, Lname; Count(Ssn) -> depend (π Ssn, Fname, Minit, Lname (employee) ⨝ Ssn=Essn π Essn, Dependent_name (dependent))))
+
+

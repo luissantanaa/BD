@@ -1,0 +1,1 @@
+π Pname, Fname, Minit, Lname, Hours,Dno (project ⨝ Pnumber=Pno and Pname = 'Aveiro Digital' and Hours ≥ 21 works_on   ⨝ Essn=Ssn and Dno = 3 employee)
